@@ -2,8 +2,7 @@
 ## as they don't work well with CF argo tunnels
 
 To publish the docker image, first ensure you're logged into docker hub, using `docker login`
-- If this fails, you might need to get rid of the `creds` field from your `config.json` file in the Docker directory
-
+- If this fails, you might need to get rid of the `creds` field from `~/.docker/config.json`
 Setup buildx using `docker buildx create --use`
 
 Build, tag, and push the image:
